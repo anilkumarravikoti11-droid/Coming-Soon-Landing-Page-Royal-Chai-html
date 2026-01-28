@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brew the Royal Tradition | Coming Soon</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome for social icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+  <style>
+    :root {
+      --gold: #c9a24d;
+      --brown: #3b2a1a;
+      --cream: #f7f3ec;
+      --dark: #1f1a14;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, var(--cream), #efe6d8);
+      color: var(--brown);
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1100px;
+      width: 100%;
+      background: #fff;
+      border-radius: 16px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+    }
+
+    /* Left Section */
+    .left {
+      padding: 60px 50px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+
+    .logo img {
+      width: 55px;
+      height: 55px;
+      object-fit: contain;
+    }
+
+    .logo span {
+      font-family: 'Playfair Display', serif;
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 42px;
+      color: var(--dark);
+      margin-bottom: 10px;
+    }
+
+    .tagline {
+      font-size: 18px;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: 25px;
+    }
+
+    .description {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #5a4a3b;
+      margin-bottom: 35px;
+    }
+
+    .launch {
+      display: inline-block;
+      padding: 10px 22px;
+      border: 1px solid var(--gold);
+      border-radius: 30px;
+      font-size: 14px;
+      letter-spacing: 1px;
+      margin-bottom: 35px;
+    }
+
+    .email-box {
+      display: flex;
+      max-width: 420px;
+      margin-bottom: 30px;
+    }
+
+    .email-box input {
+      flex: 1;
+      padding: 14px 16px;
+      border: 1px solid #ddd;
+      border-radius: 30px 0 0 30px;
+      outline: none;
+      font-size: 14px;
+    }
+
+    .email-box button {
+      padding: 14px 26px;
+      border: none;
+      background: var(--gold);
+      color: #fff;
+      font-size: 14px;
+      border-radius: 0 30px 30px 0;
+      cursor: pointer;
+      transition: 0.3s ease;
+    }
+
+    .email-box button:hover {
+      background: #b08b3e;
+    }
+
+    .socials {
+      display: flex;
+      gap: 18px;
+    }
+
+    .socials a {
+      color: var(--brown);
+      font-size: 18px;
+      transition: 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: var(--gold);
+    }
+
+    /* Right Section */
+    .right {
+      background: linear-gradient(160deg, var(--brown), var(--dark));
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+      text-align: center;
+    }
+
+    .right-content h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .right-content p {
+      font-size: 15px;
+      line-height: 1.7;
+      opacity: 0.9;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr;
+      }
+
+      .right {
+        order: -1;
+      }
+
+      h1 {
+        font-size: 36px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .left {
+        padding: 40px 25px;
+      }
+
+      h1 {
+        font-size: 30px;
+      }
+
+      .email-box {
+        flex-direction: column;
+      }
+
+      .email-box input,
+      .email-box button {
+        border-radius: 30px;
+      }
+
+      .email-box button {
+        margin-top: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Left -->
+    <div class="left">
+      <div class="logo">
+        <!-- Replace src with your actual logo -->
+        <img src="logo.png" alt="Brand Logo" />
+        <span>Royal Chai</span>
+      </div>
+
+      <h1>Brew the Royal Tradition</h1>
+      <div class="tagline">Premium Instant Chai Tea Premix</div>
+
+      <p class="description">
+        Inspired by the timeless tea rituals of royal Indian households, our premium chai premix blends rich spices,
+        heritage flavours, and modern convenience — crafted for moments that deserve indulgence.
+      </p>
+
+      <div class="launch">Launching Soon</div>
+
+      <div class="email-box">
+        <input type="email" placeholder="Enter your email" />
+        <button>Notify Me</button>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+      </div>
+    </div>
+
+    <!-- Right -->
+    <div class="right">
+      <div class="right-content">
+        <h2>Royal Taste. Modern Ease.</h2>
+        <p>
+          A luxurious cup of chai, ready in seconds — steeped in warmth, elegance, and legacy.
+        </p>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>
